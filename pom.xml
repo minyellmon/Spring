@@ -10,6 +10,13 @@
     <packaging>pom</packaging>
     <modules>
         <module>sample-di</module>
+        <module>person-di</module>
+        <module>bean-scoped</module>
+        <module>altering-behavior</module>
+        <module>property-source</module>
+        <module>two-proxy</module>
+        <module>profile</module>
+        <module>spel-demo</module>
     </modules>
 
     <properties>
@@ -19,6 +26,11 @@
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>3.0.3</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context</artifactId>
@@ -32,6 +44,7 @@
         </dependencies>
     </dependencyManagement>
     <dependencies>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
